@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+/* ===================GLOBAIS==================== */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color:#96adf3;
+    --secondary-color: #7490b4;
+    --title-color: #202130;
+    
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.6rem;
+    padding-inline: 1rem;
+    padding-block: 2rem;
+
+    background-color: var(--primary-color);
+}
+
+main .text-capitalize{
+    text-transform: capitalize;
+}
+
+/* ====================MAIN==================== */
+
+main {
+    width: 37.5rem;
+    margin-inline: auto;
+    padding: 2rem 1rem;
+
+    background-color: var(--secondary-color);
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.164);
+    border: 0.2rem solid white;
+}
+
+main .header {
+    text-align: center;
+}
+
+main .header h1 {
+    font-size: 4rem;
+    color: var(--title-color);
+}
+
+main .header p {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    padding: 1rem;
+
+    color: rgb(46, 46, 46);
+    border-bottom: 0.2rem solid rgb(58, 58, 58);
+}
+
+/* ====================FIGURE==================== */
+
+figure {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 6rem;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+    border: 0.2rem solid white;
+    margin-bottom: 1rem;
+}
+
+figure figcaption {
+    text-align: center;
+    font-weight: bold;
+    color: var(--title-color);
+}
+
+/* ====================SECTION==================== */
+
+#tribute-info h2 {
+    text-align: center;
+    color: var(--title-color);
+    font-size: 3.4rem;
+    margin-bottom: 3rem;
+}
+
+#tribute-info ul {
+    list-style: none;
+    margin-bottom: 2rem;
+}
+
+#tribute-info ul li {
+    padding-bottom: 2rem;
+}
+
+/* ====================PARAGRAPH LINK==================== */
+
+#paragrafe-link {
+    text-align: center;
+}
+
+#paragrafe-link a {
+    text-decoration: none;
+    margin-left: 2rem;
+    border: 3px solid #292953;
+    padding: 5px 10px;
+    border-radius: 1rem;
+    color: white;
+}
+
+#paragrafe-link a:hover {
+    color: rgba(17, 0, 255, 0.658);
+    background-color: white;
+}
+
+@media (min-width: 320px) {
+    main {
+        width: 33rem;
+    }
+}
+ 
+@media (min-width: 720px) {
+    main {
+        width: 60rem;
+    }
+
+    figure {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #tribute-info {
+        width: 80%;
+        margin-inline: auto;
+    }
+}
+
+@media (min-width: 1060px) {
+    main {
+        width: 80rem;
+    }
+}
