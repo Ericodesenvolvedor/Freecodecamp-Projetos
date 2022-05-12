@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de satisfação</title>
+</head>
+<body>
+    <header>
+        <h1 id="title">Formulário de satisfação</h1>
+        <p id="description">O seu feedback pode nos ajudar a melhorar o curso!</p>
+    </header>
+
+    <main>
+        <form action="#" method="post" id="survey-form">
+            <fieldset>
+                <legend>Feedback</legend>
+
+                <section>
+                    <h2>Informações Pessoais</h2>
+
+                    <div>
+                        <label for="name" id="name-label">Nome: </label>
+                        <input type="text" name="nomeAluno" id="name" placeholder="ex: João" required>
+                    </div>
+
+                    <div>
+                        <label for="email" id="email-label">Email: </label>
+                        <input type="email" name="emailAluno" id="email" placeholder="ex: exemplo@exemplo.com" required>
+                    </div>
+
+                    <div>
+                        <label for="number" id="number-label">Idade: </label>
+                        <input type="number" name="idadeAluno" id="number" min="10" max="122" placeholder="ex: 18" required>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Informações sobre o curso</h2>
+                    <div>
+                        <label for="dropdown">Qual curso você fez ou faz?</label>
+                        <select name="cursos" id="dropdown">
+                            <optgroup label="Cursos">
+                                <option value="programacao">Programação</option>
+                                <option value="artesCulturais">Artes Culturais</option>
+                                <option value="logistica">Logistica</option>
+                                <option value="gestaoEmpresarial">Gestão empresarial</option>
+                            </optgroup>
+                        </select>
+                    </div>
+
+                    <div>
+                        <h3>Selecione a carga horario do curso</h2>
+                        <label for="cargaHoraria30">30 Horas</label>
+                        <input type="radio" name="cargaHoraria" id="cargaHoraria30">
+
+                        <label for="cargaHoraria120">120 Horas</label>
+                        <input type="radio" name="cargaHoraria" id="cargaHoraria120">
+                        
+                        <label for="cargaHoraria300">300 Horas</label>
+                        <input type="radio" name="cargaHoraria" id="cargaHoraria300">
+                    </div>
+
+                    <div>
+                        <h3>Selecione o turno do curso</h2>
+                        <label for="turnoManha">Manhã</label>
+                        <input type="radio" name="turno" id="turnoManha">
+                        
+                        <label for="turnoTarde">Tarde</label>
+                        <input type="radio" name="turno" id="turnoTarde">
+                        
+                        <label for="turnoNoite">Noite</label>
+                        <input type="radio" name="turno" id="turnoNoite">
+                    </div>
+
+                    <section>
+                        <div>
+                            <h3>O que você gostou do curso?</h3>
+                            <label for="didatica">Didatica</label>
+                            <input type="checkbox" name="checkboxDidadica" value="didatica" id="didatica">
+                            
+                            <label for="trabalhos">Trabalhos</label>
+                            <input type="checkbox" name="checkboxTrabalhos" value="trabalhos" id="trabalhos">
+                            
+                            <label for="atividadeEmSala">Atividade em sala</label>
+                            <input type="checkbox" name="checkboxAtividadeEmSala" value="atividade em sala" id="atividadeEmSala">
+                            
+                            <label for="dinamicas">Dinamicas</label>
+                            <input type="checkbox" name="checkboxDimica" value="dinamicas" id="dinamicas">
+                            
+                            <label for="materiais">Materiais</label>
+                            <input type="checkbox" name="checkboxMateriais" value="materiais" id="materiais">
+                            
+                            <label for="outros">Outros</label>
+                            <input type="checkbox" name="checkboxOutros" value="outros" id="outros">
+                        </div>
+
+                        <div>
+                            <h3>O que você não gostou do curso?</h3>
+                            <label for="didaticaNao">Didatica</label>
+                            <input type="checkbox" name="checkboxDidadicaNao" value="didaticaNao" id="didaticaNao">
+                            
+                            <label for="trabalhosNao">Trabalhos</label>
+                            <input type="checkbox" name="checkboxTrabalhosNao" value="trabalhosNao" id="trabalhosNao">
+                            
+                            <label for="atividadeEmSalaNao">Atividade em sala</label>
+                            <input type="checkbox" name="checkboxAtividadeEmSalaNao" value="atividade em salaNao" id="atividadeEmSalaNao">
+                            
+                            <label for="dinamicasNao">Dinamicas</label>
+                            <input type="checkbox" name="checkboxDimicaNao" value="dinamicasNao" id="dinamicasNao">
+                            
+                            <label for="materiaisNao">Materiais</label>
+                            <input type="checkbox" name="checkboxMateriaisNao" value="materiaisNao" id="materiaisNao">
+
+                            <label for="outrosNao">Outros</label>
+                            <input type="checkbox" name="checkboxOutros" value="outrosNao" id="outrosNao">
+                        </div>
+                    </section>
+
+                    <div>
+                        <label for="mensagem">Mensagem</label>
+                        <textarea name="comentarioSobre" id="mensagem" cols="70" rows="10" placeholder="Deixe um comentário sobre o curso" maxlength="250"></textarea>
+                    </div>
+
+                    <button type="submit" id="submit">Enviar feedback</button>
+                </section>
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>
