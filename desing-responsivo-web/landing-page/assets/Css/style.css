@@ -318,6 +318,10 @@ footer p a:hover {
         margin: auto;
     }
 
+    #card #sobre-imagem {
+        margin-left: 0;
+    }
+
     #card #sobre-imagem img {
         display: block;
         max-width: 500px;
